@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTTP Requests</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
+        integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+    <main>
+        <section>
+            <h2>GET ALL BEERS</h2>
+            <section id="getAllBeers">
+            </section>
+            <h2>GET BEER BY ID</h2>
+            <section id="getBeerById">
+                <label for="idOfBeer">Enter ID</label>
+                <input id="idOfBeer" type="number"  min="1" style="background-color: slategrey">
+                <button id="get" style="background-color: slategrey;">GET</button>
+                <br>
+            </section>
+            <h2>GET BEER BY NAME</h2>
+            <section  id="getBeerByName">
+                <label for="nameOfBeer">Enter Name</label>
+                <input id="nameOfBeer" type="text" style="background-color: slategrey">
+                <button id="get2" style="background-color: slategrey;">GET</button>
+                <br>
+            </section>
+            <h2>RESULTS</h2>
+            <section>
+                <label for="brewery">BREWERY</label>
+                <input id="brewery" readonly type="text" style="background-color: slategrey">
+                <br>
+                <label for="beerName">NAME</label>
+                <input id="beerName" readonly type="text" style="background-color: slategrey">
+                <br>
+                <label for="abv">ABV</label>
+                <input id="abv" readonly type="number" style="background-color: slategrey">
+                <br>
+                <label for="nice">IS IT NICE?</label>
+                <input id="nice" readonly type="boolean" style="background-color: slategrey">
+            </section>
+            <h2>HISTORY</h2>
+            <section>
+                <div id="history">
+                    <p></p>
+                </div>
+            
+            </section>
+        </section>
+    </main>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
